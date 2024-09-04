@@ -6,30 +6,31 @@ Datasets
 PBM Datasets: The project utilized QNZS-normalized and SD-preprocessed PBM data files to identify potential binding sites through z-score normalization and thresholding techniques.
 HTS Dataset: Processed sequences extracted from FASTQ files with a quality control threshold to ensure high fidelity of nucleotide data.
 SMS Dataset: This dataset was filtered out to improve model performance but was initially considered for comprehensive analysis.
+
 Methods
 Data Processing and Augmentation:
-
 Normalization and labeling of sequence data based on statistical thresholds.
 Data augmentation techniques including reverse complement, sequence shifting, and edge mutations were applied to increase the diversity of positive training examples.
-Feature Extraction:
 
+Feature Extraction:
 DNA sequences were encoded into k-mers of varying lengths, which were then integer-encoded to serve as inputs for the CNN model.
 Custom padding and augmentation strategies were applied to balance sequence lengths and enhance model robustness.
-Model Architecture:
 
+Model Architecture:
 A simplified CNN model with multiple convolutional layers and max-pooling was implemented to capture patterns within the sequences.
 A custom Focal Loss function was used to address class imbalance during training, enhancing the model’s ability to detect minority class motifs.
-Training and Evaluation:
 
+Training and Evaluation:
 Model training was conducted using augmented datasets with a detailed evaluation of performance metrics such as AUROC and AUPRC.
 Confusion matrices were plotted to visualize prediction accuracy across epochs.
 Prediction and Post-processing:
 
 The model was evaluated on test sequences, with probability scores calibrated and adjusted to meet IBIS competition requirements.
+
 Results
 The model successfully identified significant TF motifs within the TIGD3 gene sequences, demonstrating strong performance metrics:
-AUPRC (Area Under Precision-Recall Curve): Demonstrated high precision in identifying true motifs.
-AUROC (Area Under Receiver Operating Characteristic Curve): Showcased the model’s ability to distinguish between motif and non-motif sequences.
+AUPRC 0.59 (Area Under Precision-Recall Curve): Demonstrated high precision in identifying true motifs.
+AUROC 0.87 (Area Under Receiver Operating Characteristic Curve): Showcased the model’s ability to distinguish between motif and non-motif sequences.
 
 How to Run the Project
 Clone the Repository:
