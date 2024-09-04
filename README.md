@@ -1,4 +1,4 @@
-TF Motif Prediction in TIGD3 Gene - IBIS Competition
+# TF Motif Prediction in TIGD3 Gene - IBIS Competition
 
 
 Project Overview
@@ -36,18 +36,18 @@ Prediction and Post-processing:
 
 The model was evaluated on test sequences, with probability scores calibrated and adjusted to meet IBIS competition requirements.
 
-Results
+## Results
 
-The model successfully identified significant TF motifs within the TIGD3 gene sequences, demonstrating strong performance metrics:
-AUPRC 0.59 (Area Under Precision-Recall Curve): Demonstrated high precision in identifying true motifs.
-AUROC 0.87 (Area Under Receiver Operating Characteristic Curve): Showcased the model’s ability to distinguish between motif and non-motif sequences.
+- The model successfully identified significant TF motifs within the TIGD3 gene sequences, demonstrating strong performance metrics:
+- AUPRC 0.59 (Area Under Precision-Recall Curve): Demonstrated high precision in identifying true motifs.
+- AUROC 0.87 (Area Under Receiver Operating Characteristic Curve): Showcased the model’s ability to distinguish between motif and non-motif sequences.
 
 How to Run the Project
 
-Clone the Repository:
+## Clone the Repository:
 
-git clone https://github.com/yourusername/TFs-motif-discovery-in-TIGD3-gene.git
-cd TFs-motif-discovery-in-TIGD3-gene
+- git clone https://github.com/yourusername/TFs-motif-discovery-in-TIGD3-gene.git
+- cd TFs-motif-discovery-in-TIGD3-gene
 
 Ensure you have Python installed along with the required libraries.
 
@@ -63,10 +63,10 @@ TFs_prediction_on_TIGD3_gene.ipynb: Main notebook containing the entire pipeline
 cnn_model.pth: Saved model weights for inference.
 parsed_sequences.csv: Pre-processed test sequences for prediction.
 
-Future Work
+## Future Work
 
-Extend the model to include additional TF motifs and sequence datasets.
-Explore other neural network architectures and loss functions to further enhance prediction accuracy.
+- Extend the model to include additional TF motifs and sequence datasets.
+- Explore other neural network architectures and loss functions to further enhance prediction accuracy.
 
 Acknowledgments
 
